@@ -26,9 +26,7 @@ export default function Page() {
       <div className="grid lg:grid-cols-3 gap-6">
         {/* LEFT: CART ITEMS */}
         <div className="lg:col-span-2 bg-gray-100 p-6 rounded-md">
-          <h3 className="text-lg font-semibold text-slate-900">
-            Your Cart
-          </h3>
+          <h3 className="text-lg font-semibold text-slate-900">Your Cart</h3>
           <hr className="border-gray-300 mt-4 mb-8" />
 
           <div className="space-y-6">
@@ -54,7 +52,9 @@ export default function Page() {
                     <h4 className="text-[15px] font-semibold text-slate-900">
                       {item.name}
                     </h4>
-
+                    <h4 className="text-[15px] font-semibold text-slate-900">
+                      {item.price}
+                    </h4>
                     <button
                       onClick={() => removeFromCart(item.id)}
                       className="text-xs font-medium text-red-500 mt-1"
