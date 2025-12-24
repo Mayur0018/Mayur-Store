@@ -80,7 +80,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-700 text-center py-4 text-sm">
-        © {new Date().getFullYear()} MyBrand. All rights reserved.
+        © {new Date().getFullYear()} MayursStore. All rights reserved.
       </div>
     </footer>
   );

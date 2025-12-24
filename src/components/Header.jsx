@@ -69,14 +69,14 @@ export default function Header() {
               Contact
             </Link>
 
-            <Link href="/cart" className="flex items-center gap-2 mt-2">
-              <FiShoppingCart />
-              {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-black text-red-500 text-xs w-5 h-5 rounded-full flex items-center justify-center">
-                  {cartCount}
-                </span>
-              )}
-            </Link>
+         <Link href="/cart" className="relative">
+            <FiShoppingCart className="text-2xl text-gray-800" />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                {cartCount}
+              </span>
+            )}
+          </Link>
 
             <button className="mt-4 bg-black text-white py-2 rounded-lg">
               Get Started

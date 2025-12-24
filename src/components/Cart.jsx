@@ -4,17 +4,17 @@ import { products } from "@/Data/product";
 
 const Cart = () => {
   return (
-    <section className="px-4 py-12">
+    <section className="py-12">
       <h2 className="text-2xl font-bold mb-6">Featured Products</h2>
 
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {products.map((product) => (
           <Link
             key={product.id}
             href={`/cartdetails/${product.id}`}
             className="block"
           >
-            <div className="bg-white border rounded-lg p-4 hover:shadow-lg transition">
+            <div className="bg-white   rounded-lg p-4 hover:shadow-lg transition">
               <img
                 src={product.image}
                 alt={product.name}
